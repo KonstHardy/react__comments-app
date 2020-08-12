@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+}
+.form {
+  width: 390px;
+  margin-bottom: 4rem;
+  margin-right: 5rem;
+}
+.form__comment {
+  display: flex;
+  justify-content: space-between;
+}
+.form__inputName {
+  width: 200px;
+  height: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #a7a7a7;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  color: #6b6b6b;
+  outline: none;
+  cursor: pointer;
+}
+.form__inputText {
+  width: 368px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a7a7a7;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  color: #6b6b6b;
+  outline: none;
+  resize: none;
+  cursor: pointer;
+}
+.btn__submit {
+  width: 140px;
+  height: 42px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #fff;
+  background-color: #00bc9c;
+  transition: transform 0.15s, box-shadow 0.3s, color 0.4s,
+    background-color 0.4s, border 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+.btn__submit:hover {
+  border: 1px solid #a3b1bf;
+  background-color: #000;
+  color: #00bc9c;
+  box-shadow: 0 0 15px 5px #9faebd;
+  transform: scale(1.02);
+}
+.img__react {
+  object-fit: contain;
+  height: 126px;
+  animation: img__react--roll 120s linear infinite;
+}
+@keyframes img__react--roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
