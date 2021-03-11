@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import Context from "../context";
-import "../styles/CommentItem.css";
+import Context from "../../context";
+import "./ItemComment.css";
 
-function CommentItem({ comment }) {
+function ItemComment({ comment }) {
   const { removeComment } = useContext(Context);
 
   return (
@@ -27,8 +27,8 @@ function CommentItem({ comment }) {
   );
 }
 
-CommentItem.propTypes = {
+ItemComment.propTypes = {
   comment: PropTypes.object.isRequired,
 };
 
-export default CommentItem;
+export default ItemComment;

@@ -1,9 +1,9 @@
 import React from "react";
 import Context from "../context";
-import CommentsList from "./CommentsList";
-import AddComment from "./AddComment";
-import getDate from "./GetDate";
-import "../styles/App.css";
+import ListComments from "../components/listComments";
+import AddComment from "../components/addComment";
+import GetDate from "../components/getDate";
+import "./App.css";
 
 function App() {
   let savedComments;
@@ -46,7 +46,7 @@ function App() {
       id: Date.now(),
       name: comment.name,
       text: comment.text,
-      date: getDate(),
+      date: GetDate(),
     };
 
     const newComments = [newComment, ...comments];
@@ -74,7 +74,7 @@ function App() {
 
         <h2 className="subtitle">List of comments:</h2>
         {comments.length ? (
-          <CommentsList comments={comments} />
+          <ListComments comments={comments} />
         ) : (
           <p className="emptyCommenstList">
             Here are no comments. Write the first comment.
