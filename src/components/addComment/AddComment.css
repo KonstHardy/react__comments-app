@@ -2,67 +2,98 @@
   display: flex;
 }
 .form {
-  width: 390px;
+  width: 400px;
   margin-bottom: 4rem;
-  margin-right: 5rem;
+  margin-right: 4rem;
 }
 .form__comment {
   display: flex;
   justify-content: space-between;
 }
 .form__inputName {
-  width: 200px;
-  height: 20px;
+  width: 205px;
+  height: 33px;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #a7a7a7;
-  border-radius: 4px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   font-size: 14px;
-  color: #6b6b6b;
-  outline: none;
-  cursor: pointer;
+  letter-spacing: 1.3px;
 }
 .form__inputText {
   width: 368px;
   padding: 10px;
+  font-size: 16px;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.form__inputName,
+.form__inputText {
   border-radius: 8px;
   border: 1px solid #a7a7a7;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  font-size: 16px;
   color: #6b6b6b;
   outline: none;
-  resize: none;
   cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s linear, box-shadow 0.15s linear;
+}
+.form__inputName:hover,
+.form__inputText:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
 }
 .btn__submit {
+  position: relative;
+  display: block;
   width: 140px;
-  height: 42px;
+  height: 55px;
   padding: 0;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.8px;
-  color: #fff;
-  background-color: #00bc9c;
-  transition: transform 0.15s, box-shadow 0.3s, color 0.4s,
-    background-color 0.4s, border 0.4s;
+  border-radius: 5px;
+  border: none;
   outline: none;
   cursor: pointer;
+  color: #fff;
+  background-color: #00bc9c;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+  transition: color 0.1s linear, letter-spacing 0.1s linear,
+    transform 0.1s linear;
+}
+.btn__submit::before,
+.btn__submit::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #000;
+  border-radius: 5px;
 }
 .btn__submit:hover {
-  border: 1px solid #a3b1bf;
-  background-color: #000;
-  color: #00bc9c;
-  box-shadow: 0 0 15px 5px #9faebd;
-  transform: scale(1.02);
+  color: #fff;
+  letter-spacing: 1px;
+  transform: scale(1.04);
 }
+.btn__submit::after {
+  height: 0;
+  width: 0;
+  top: 50%;
+  left: 50%;
+  transition: all 0.2s;
+}
+.btn__submit:hover::after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .img__react {
   object-fit: contain;
-  height: 126px;
-  animation: img__react--roll 120s linear infinite;
+  height: 145px;
+  animation: img__react--roll 125s linear infinite;
 }
 @keyframes img__react--roll {
   from {
