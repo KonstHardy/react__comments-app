@@ -5,8 +5,10 @@
   width: 600px;
 }
 .title {
+  margin-top: 0;
   margin-bottom: 5rem;
   text-align: center;
+  text-shadow: 2px 2px 5px rgb(0 0 0 / 55%);
 }
 .subtitle {
   text-decoration: underline;

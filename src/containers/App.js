@@ -67,7 +67,7 @@ function App() {
   return (
     <Context.Provider value={{ removeComment }}>
       <div className="wrapper">
-        <h1 className="title">Виджет комментариев на React</h1>
+        <h1 className="title">react__comments-app</h1>
 
         <h2 className="subtitle">Your comment:</h2>
         <AddComment onCreate={addNewComment} />
