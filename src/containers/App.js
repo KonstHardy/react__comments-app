@@ -13,19 +13,19 @@ function App() {
       id: 3,
       name: "Iron Man",
       text: "Yeah it is.",
-      date: "05/07/2020 в 21:07:42 ",
+      date: GetDate(),
     },
     {
       id: 2,
       name: "Professor Hulk",
       text: "No, man! React is realy cool!",
-      date: "05/07/2020 в 16:27:38",
+      date: GetDate(),
     },
     {
       id: 1,
       name: "Peter Parker",
       text: "React is too hard :(",
-      date: "05/07/2020 в 14:53:05",
+      date: GetDate(),
     },
   ];
 
