@@ -1,14 +1,9 @@
 {
-  "name": "react__comments-app",
+  "name": "react-app",
   "version": "0.1.0",
   "description": "Web App provides to add and remove comments and save result in localStorage using React.js",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KonstHardy/react__comments-app.git"
-  },
   "author": "KonstHardy",
-  "homepage": "https://github.com/KonstHardy/react__comments-app#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -25,7 +20,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react__comments-app"
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [
