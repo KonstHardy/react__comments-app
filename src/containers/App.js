@@ -71,15 +71,7 @@ function App() {
 
         <h2 className="subtitle">Your comment:</h2>
         <AddComment onCreate={addNewComment} />
-
-        <h2 className="subtitle">List of comments:</h2>
-        {comments.length ? (
-          <ListComments comments={comments} />
-        ) : (
-          <p className="emptyCommenstList">
-            Here are no comments. Write the first comment.
-          </p>
-        )}
+        <ListComments comments={comments} />
       </div>
     </Context.Provider>
   );

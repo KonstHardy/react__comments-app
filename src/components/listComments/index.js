@@ -5,11 +5,20 @@ import "./ListComments.css";
 
 function ListComments(props) {
   return (
-    <ul className="comments__list">
-      {props.comments.map((comment) => {
-        return <ItemComment comment={comment} key={comment.id} />;
-      })}
-    </ul>
+    <>
+      <h2 className="subtitle">List of comments:</h2>
+      <ul className="comments__list">
+        {props.comments.length ? (
+          props.comments.map((comment) => {
+            return <ItemComment comment={comment} key={comment.id} />;
+          })
+        ) : (
+          <p className="emptyCommenstList">
+            Here are no comments. Write the first comment.
+          </p>
+        )}
+      </ul>
+    </>
   );
 }
 
