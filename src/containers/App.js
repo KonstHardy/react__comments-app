@@ -6,8 +6,6 @@ import GetDate from "../components/getDate";
 import "./App.css";
 
 function App() {
-  let savedComments;
-
   const defaultComments = [
     {
       id: 3,
@@ -29,12 +27,14 @@ function App() {
     },
   ];
 
+  let savedComments;
+
   try {
     savedComments =
-      JSON.parse(localStorage.getItem("commentsArr")) || defaultComments;
+      JSON.parse(localStorage.getItem("arrayComments")) || defaultComments;
   } catch (error) {
     savedComments = [];
-    localStorage.removeItem("commentsArr");
+    localStorage.removeItem("arrayComments");
   }
 
   const [comments, setComments] = React.useState(
@@ -48,12 +48,11 @@ function App() {
       text: comment.text,
       date: GetDate(),
     };
-
     const newComments = [newComment, ...comments];
 
     setComments(newComments);
 
-    localStorage.setItem("commentsArr", JSON.stringify(newComments));
+    localStorage.setItem("arrayComments", JSON.stringify(newComments));
   }
 
   function removeComment(id) {
@@ -61,15 +60,13 @@ function App() {
 
     setComments(newComments);
 
-    localStorage.setItem("commentsArr", JSON.stringify(newComments));
+    localStorage.setItem("arrayComments", JSON.stringify(newComments));
   }
 
   return (
     <Context.Provider value={{ removeComment }}>
       <div className="wrapper">
         <h1 className="title">react__comments-app</h1>
-
-        <h2 className="subtitle">Your comment:</h2>
         <AddComment onCreate={addNewComment} />
         <ListComments comments={comments} />
       </div>
