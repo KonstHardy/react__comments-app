@@ -1,5 +1,3 @@
-import React from "react";
-
 function getDate() {
   let now = new Date();
   let year = now.getFullYear();
