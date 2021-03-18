@@ -13,7 +13,7 @@ function ListComments(props) {
             return <ItemComment comment={comment} key={comment.id} />;
           })
         ) : (
-          <p className="emptyCommenstList">
+          <p className="emptyCommentsList">
             Here are no comments. Write the first comment.
           </p>
         )}
