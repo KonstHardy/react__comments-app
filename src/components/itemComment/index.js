@@ -17,11 +17,11 @@ function ItemComment({ comment }) {
       </div>
 
       <button
-        class="btn__remove"
+        className="btn__remove"
         onClick={removeComment.bind(null, comment.id)}
       >
-        <span class="btn__line"></span>
-        <span class="btn__line"></span>
+        <span className="btn__line"></span>
+        <span className="btn__line"></span>
       </button>
     </li>
   );
