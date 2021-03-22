@@ -1,7 +1,7 @@
 {
   "name": "react__comments-app",
   "version": "0.1.0",
-  "description": "Web App provides to add and remove comments and save result in localStorage using React.js",
+  "description": "Web App provides to add and remove comments and save results in localStorage using React.js",
   "private": true,
   "author": "KonstHardy",
   "dependencies": {
