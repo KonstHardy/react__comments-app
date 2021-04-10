@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import logo from "./../../img/logo192.png";
 import "./AddComment.css";
 
 function AddComment({ onCreate }) {
@@ -41,7 +42,7 @@ function AddComment({ onCreate }) {
             required
           ></textarea>
         </form>
-        <img className="img__react" src="./../logo192.png" alt="React logo" />
+        <img className="img__react" src={logo} alt="React logo" />
       </div>
     </>
   );
