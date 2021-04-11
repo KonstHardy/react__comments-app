@@ -40,6 +40,7 @@ function AddComment({ onCreate }) {
             onChange={(event) => setText(event.target.value)}
             placeholder="Enter your comment"
             required
+            rows="1"
           ></textarea>
         </form>
         <img className="img__react" src={logo} alt="React logo" />
