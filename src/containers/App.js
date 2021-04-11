@@ -16,7 +16,7 @@ function App() {
     {
       id: 2,
       name: "Professor Hulk",
-      text: "No, man! React is realy cool!",
+      text: "No, man! React is really cool!",
       date: GetDate(),
     },
     {
