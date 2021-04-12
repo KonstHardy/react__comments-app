@@ -1,10 +1,10 @@
 # react__comments-app
 
-### Description
+* ### Description
 
 Web App provides to add and remove comments and save results in localStorage using React.js
 
-### Preview
+* ### Preview
 
 ![Preview](./preview/preview.gif)
 
