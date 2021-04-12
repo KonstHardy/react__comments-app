@@ -4,6 +4,10 @@
 
 Web App provides to add and remove comments and save results in localStorage using React.js
 
+### Preview
+
+![Preview](./preview/preview.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
