@@ -7,11 +7,15 @@ function getDate() {
   let minutes = now.getMinutes();
   let seconds = now.getSeconds();
 
-  let fullDate = `${(day > 9 ? "" : "0") + day}/${
+  let date = `${(day > 9 ? "" : "0") + day}/${
     (month > 9 ? "" : "0") + month
-  }/${year} в ${(hours > 9 ? "" : "0") + hours}:${
+  }/${year}`;
+
+  let time = `${(hours > 9 ? "" : "0") + hours}:${
     (minutes > 9 ? "" : "0") + minutes
   }:${(seconds > 9 ? "" : "0") + seconds}`;
+
+  let fullDate = `${date} at ${time}`;
   return fullDate;
 }
 
